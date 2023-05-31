@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    width:auto;
+    height:auto;
+    background-size: cover;
+
+}
+body{
+    background: url('https://i.pinimg.com/originals/39/ec/c5/39ecc5b2649bfc852075d3b8de48801b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height:'100vh';
+    font-family:'poppins',sans-serif;
+}
+.container{
+    padding:20px 70px;
+    color:white;
+}
+.current-info{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.date-cont{
+    font-weight: 100;
+}
+.date-cont .time{
+    font-size:70px;
+    
+}
+.date-cont #am-pm{
+font-size:30px;
+margin-left:10px;
+}
+.date-cont .date{
+    font-size:30px;
+}
+.Placecont .timez{
+    font-size:30px;
+    font-weight:100;
+}
+.Placecont .country{
+    font-size:12px;
+    font-weight:700;
+}
+.current-info .others{
+    display:flex;
+    flex-direction: column;
+    background:rgb(41, 127, 180);
+    padding:20px;
+    border-radius: 20px;
+    margin:10px 0px;
+    border:1px solid whitesmoke;
+}
+.current-info .others .weatheritem{
+    display: flex;
+    justify-content: space-between;
+}
+.future-forecast{
+    background-color: black;
+    padding:25px;
+    position: fixed;
+    bottom:0;
+    display: flex;
+    color:white;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    height:200px;
+    left:0px;
+}
+.future-forecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px;
+    border:1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;;
+    height:200px;
+
+}
+.future-forecast .today .day{
+    padding:5px 15px;
+    background:rgba(109, 103, 103, 0.203);
+    border-radius: 50px;
+    text-align: center;
+}
+.future-forecast .today .temp{
+    font-size:20px;
+    padding-top:15px;
+}
+.future-forecast .weatherforecast{
+    display:flex;
+}
+.weatherforecast .weatherforecastitem{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin:0px;
+    border:1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;;
+}
+.weatherforecast .weatherforecastitem .day{
+    padding:5px 15px;
+    background:rgba(109, 103, 103, 0.203);
+    border-radius: 50px;
+    text-align: center;
+}
+.weatherforecast .weatherforecastitem .temp{
+    font-weight: 100;
+}
+.Searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.searchbar{
+    width:100%;
+    max-width:700px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding:5px 20px;
+}
+.searchbar input{
+    background:transparent;
+    flex:1;
+    border:0;
+    outline: none;
+    padding:10px 20px;
+    font-size:20px;
+    color:#cac7ff;
+}
+#id{
+    height:5px;
+    width:5px;
+}
+::placeholder{
+    color:black;
+    text-align: center;
+    font-family: cursive;
+}
+.searchbar button img{
+ width:30px;
+
+}
+.searchbar button{
+    border:0;
+    border-radius: 50%;
+    width:60px;
+    height:60px;
+    background: #58629b;
+    cursor:pointer;
+}
+@media only screen and(max-width:730px){
+    .container{
+padding:20px;
+    }
+    .future-forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y:scroll;
+    }
+    .future-forecast .today .temp{
+        font-size:23px;
+    }
+    .date-cont .time{
+        font-size:50px;
+    }
+    .date-cont #am-pm{
+        font-size:20px;
+    }
+    .date-cont .date{
+        font-size:20px;
+    }
+    .Placecont{
+text-align: end;
+margin-top: 15px;;
+    }
+    .Placecont .timez{
+        font-size:20px;
+    }
+    .current-info .others{
+padding:120x;
+    }
+    .current-info .weatheritem{
+        font-size: 14px;;
+    }
+}
+@media only screen and (max-width:1000px){
+    .future-forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-x:scroll;
+    }
+}

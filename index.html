@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ln="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+            Weather Report.
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=&libraries=places&signed in=true"> </script>
+    </head>
+    <body>
+     <div class="container">
+        <div class="current-info">
+            <div class="date-cont">
+                <div class="time" id="time">
+                    </span>
+                </div>
+                <div class="date" id="date">
+                    
+                </div>
+                <div class="others" id="currwthritems">
+                    <div class="weatheritem">
+                        <div>Humidity:</div>
+                        <div></div>
+                    </div>
+                    <div class="weatheritem" >
+                        <div>Pressure:</div>
+                        <div></div>
+                    </div>
+                    <div class="weatheritem">
+                        <div>WindSpeed:</div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="Placecont">
+                <div class="timez" id="timez">
+              Asia/Kolkata
+                </div>
+                <div class="country" id="country">
+                    IN
+                </div>
+            </div>
+        </div>
+     <div class="Searchbar">
+        <form action="" class="searchbar">
+        <input id="addressinput" type="text" placeholder="Enter Your Place" name="q">
+    </input>
+    <button type="button" onclick="getweatherdata()">Search</button>
+     </div>
+     
+
+     </div>  
+        
+     <div class="future-forecast">
+        <div class="today" id="cur-temp">
+           
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weathericon" class="w-icon">
+            <div class="Others">
+                <div class="day">Today</div>
+            
+            <div class="temp">Night-00&#176;C</div>
+            <div class="temp">Day-00&#176;C</div>
+        </div>
+    </div>
+        <div class="weatherforecast" id="weatherforecast">
+            <div class="weatherforecastitem">
+                <div class="day">Day1</div>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weathericon" class="w-icon">
+           
+            <div class="temp">Night-00&#176;C</div>
+            <div class="temp">Day-00&#176;C</div>
+            </div>
+            <div class="weatherforecastitem">
+                <div class="day">Day2</div>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weathericon" class="w-icon">
+           
+            <div class="temp">Night-00&#176;C</div>
+            <div class="temp">Day-00&#176;C</div>
+            </div>
+            <div class="weatherforecastitem">
+                <div class="day">Day3</div>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weathericon" class="w-icon">
+           
+            <div class="temp">Night-00&#176;C</div>
+            <div class="temp">Day-00&#176;C</div>
+            </div>
+            <div class="weatherforecastitem">
+                <div class="day">Day4</div>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weathericon" class="w-icon">
+           
+            <div class="temp">Night-00&#176;C</div>
+            <div class="temp">Day-00&#176;C</div>
+            </div>
+            <div class="weatherforecastitem">
+                <div class="day">Day5</div>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weathericon" class="w-icon">
+           
+            <div class="temp">Night-00&#176;C</div>
+            <div class="temp">Day-00&#176;C</div>
+            </div>
+        </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="Javsrpt.js"></script>
+    </body>
+
+
+</html>
