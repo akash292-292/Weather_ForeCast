@@ -70,6 +70,8 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 //////////////-----------------------------///////////////////////////////////
+
+///Use your Open Weather Api key here to get Longitude and Latitude for a place captured by google map Api
 function getweatherdata(){
     const APIKEY="";
      console.log(Latt);
